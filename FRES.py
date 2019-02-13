@@ -17,19 +17,19 @@ text_one_words_arr = []
 # Looping over every sentence in TEXT1
 for sentence in TEXT1:  # Looping every word in each sentence, splitted at space.
     for words in sentence.split(" "):  # Appends each word to the new array "text_one_words_arr" in lower-case
-        text_one_words_arr.append(words.lower())  # Stores the length of "text_one_words_arr" and prints it
+        text_one_words_arr.append(words)  # Stores the length of "text_one_words_arr" and prints it
 word_count_text_one = len(text_one_words_arr)
 
 
 # Code for TEXT2
 # Length of  TEXT2
 text_two_sentences = len(TEXT2)
-text_two_words_arr = [] # New array to store words of TEXT2
+text_two_words_arr = []  # New array to store words of TEXT2
 
 
 for sentence in TEXT2:  # Same as for TEXT1. Loops over every sentence -
     for words in sentence.split(" "):  # - and then every word and stores it in the array above
-        text_two_words_arr.append(words.lower())
+        text_two_words_arr.append(words)
 word_count_text_Two = len(text_two_words_arr)
 
 
@@ -37,7 +37,7 @@ word_count_text_Two = len(text_two_words_arr)
 # @PARAM: the word
 def count_vowels(word):
     count = 0
-    vowels = "aeiou"  # Variable vowels is only in lower-case because the words are stored in array in lower-case
+    vowels = "AEIOUaeiou"  # Variable vowels is only in lower-case because the words are stored in array in lower-case
     for letter in word:  # Loops each letter in the word
         if letter in vowels:   # checks if the letter is in the variable vowels
             count += 1  # Counts the vowels 
