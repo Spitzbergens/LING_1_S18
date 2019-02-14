@@ -25,12 +25,12 @@ F = bigrams.count(token_1 + " " + token_2)
 # t-score
 tScore = (F - Fe) / sqrt(F)
 
-print("The t-score of the bigram 'have been': " + str(tScore))
+print("The t-score of the bigram 'have been': " + "{0:.4f}".format(tScore))
 
-print("f1: " + str(f1))
-print("f2: " + str(f2))
-print("Nc: " + str(Nc))
-print("Fe: " + str(Fe))
-print ("F: " + str(F))
-print("t-score: " + str(tScore))
+print("f1: " + str(f1))  # prints 7
+print("f2: " + str(f2))  # print 2
+print("Nc: " + str(Nc))  # prints 109
+print("Fe: " + "{0:.4f}".format(Fe))  # prints 0.1284
+print ("F: " + str(F))  # prints 2
+print("t-score: " + "{0:.4f}".format(tScore))  # prints 1.3234 (rounded)
 

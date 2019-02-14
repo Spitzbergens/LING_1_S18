@@ -69,7 +69,7 @@ def fres(word_count, sentences, vowels_list):
     val2 = 1.015
     val3 = 84.6
     # Uses the fresch Reading Ease formula to calculate the fres score
-    result = val1 - val2 * word_count/sentences - val3 * vowels_list/word_count
+    result = "{0:.4f}".format(val1 - val2 * word_count/sentences - val3 * vowels_list/word_count)
     return result   # Returns the result
 
 
